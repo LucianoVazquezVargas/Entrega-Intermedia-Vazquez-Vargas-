@@ -7,9 +7,9 @@
 
 {% block contenido_que_cambia %}
 <h1>BUSQUEDA DE HELADOS</h1>
-{% if helado %}
+{% if helados %}
 <ul>
-  {% for nombre in helado %}
+  {% for helado in helados %}
       <li>{{helado.nombre}}</li>
       <br>
       {% endfor %}
