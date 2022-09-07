@@ -56,8 +56,8 @@ def busquedaHelados(request):
 
 def buscar(request):
         nombre=request.GET["nombre"]
-        helados=Helado.objects.filter(nombre=nombre)
-        return render(request, "AppCoder/resultadosBusqueda.html", {"helados":helados})
+        helado=Helado.objects.filter(nombre=nombre)
+        return render(request, "AppCoder/resultadosBusqueda.html", {"helados":helado})
 
 
 
