@@ -1,0 +1,18 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>RESULTADOS DE LA BUSQUEDA</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+<h1>BUSQUEDA DE HELADOS</h1>
+{% if helado %}
+<ul>
+  {% for nombre in helado %}
+      <li>{{helado.nombre}}</li>
+      <br>
+      {% endfor %}
+{% endif %}
+</ul>
+{% endblock %}
