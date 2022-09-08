@@ -74,7 +74,7 @@ hagan modificaciones de forma sencilla.
 En cuanto a lo que me importa a mi, el codigo,es asi:
 Para añadir algo al APP admin.py uso:
 from .models import *
-admin.site.register(NombreDelModelo)
+admin.site.register(NombreDelModelogit pull)
 Para que el models quede legible, recorda poner en 
 el models un __str__(self): con algo para que tome,
 por ejemplo, en el caso del models Curso:
